@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>OrganicPlus Fiji – High-Performance Farming Innovations</title>
+  <title>OrganicPlus Fiji — High-Performance Farming Innovations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Engineered biologicals that help Fiji’s farmers achieve bigger harvests and higher profitability." />
-  <meta property="og:title" content="OrganicPlus Fiji – High-Performance Farming Innovations" />
+  <meta property="og:title" content="OrganicPlus Fiji — High-Performance Farming Innovations" />
   <meta property="og:description" content="Engineered biologicals that help Fiji’s farmers achieve bigger harvests and higher profitability." />
   <meta property="og:image" content="images/og.jpg" />
   <meta name="theme-color" content="#0b6847" />
   <link rel="preload" href="images/hero.jpg" as="image">
   <style>
     :root{
-      --brand:#0b6847;        /* darker corporate green */
-      --ink:#0f172a;          /* slate-900 */
-      --muted:#475569;        /* slate-600 */
+      --brand:#0b6847;      /* darker corporate green */
+      --ink:#0f172a;        /* slate-900 */
+      --muted:#475569;      /* slate-600 */
       --line:#e2e8f0;
       --bg:#ffffff;
     }
@@ -27,59 +27,44 @@
     .btn-primary{background:var(--brand);color:#fff}
     .btn-primary:hover{filter:brightness(.95)}
     .btn-light{background:#fff;color:var(--brand);border:1px solid var(--line)}
-    /* Header / Nav */
-    header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);z-index:50;transition:box-shadow .2s ease}
+    header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);z-index:50}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
     nav a{margin:0 10px;color:var(--ink);font-weight:500}
     nav a:hover{color:var(--brand)}
-    /* Hero */
-    .hero{position:relative;min-height:58vh;max-height:720px;display:grid;place-items:end;overflow:hidden}
+    /* HERO */
+    .hero{position:relative;min-height:56vh;max-height:720px;display:grid;place-items:end;overflow:hidden}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-    .hero .overlay{position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,.15))}
-    .hero .copy{position:relative;padding:28px 0 34px 0;color:#fff}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.58), rgba(0,0,0,.18))}
+    .hero .copy{position:relative;padding:28px 0 36px;color:#fff}
     .hero h1{margin:0;font-size:clamp(28px,4vw,50px);line-height:1.1}
-    .hero p{margin:10px 0 0 0;font-size:clamp(16px,2vw,20px);color:#e6f0ea}
-    .fade-in{opacity:0;transform:translateY(6px);animation:fade .8s .15s forwards}
+    .hero p{margin:10px 0 0;font-size:clamp(16px,2vw,20px);color:#e6f0ea}
+    .fade-in{opacity:0;transform:translateY(6px);animation:fade .7s .1s forwards}
     @keyframes fade{to{opacity:1;transform:none}}
     /* Sections */
-    section{padding:64px 0}
-    h2{margin:0;font-size:clamp(24px,3vw,36px);color:var(--brand)}
-    .lead{margin-top:12px;color:var(--muted);line-height:1.7;max-width:900px}
+    section{padding:60px 0}
+    h2{margin:0 0 6px;font-size:clamp(24px,3vw,36px);color:var(--brand)}
+    .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#64748b}
+    .lead{margin-top:10px;color:var(--muted);line-height:1.7;max-width:900px}
     .grid{display:grid;gap:16px}
     .grid-2{grid-template-columns:1fr}
     .grid-3{grid-template-columns:1fr}
     .grid-4{grid-template-columns:1fr 1fr}
-    @media(min-width:900px){.grid-2{grid-template-columns:1.2fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}}
+    @media(min-width:900px){.grid-2{grid-template-columns:1.25fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}}
     .card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.03)}
     .pill{background:#edf7f1;color:#0b4e38;border:1px solid #c9e4d8;border-radius:14px;padding:10px 12px;font-size:14px}
     img.round{border-radius:16px}
-    /* Advantage band */
     .band{background:#edf7f1;border-top:1px solid #c9e4d8;border-bottom:1px solid #c9e4d8}
-    /* Testimonials */
-    .quote{font-style:italic;color:#1f2937}
-    .quote small{display:block;margin-top:8px;color:#64748b}
-    /* Contact form */
-    form input, form textarea{
-      width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit;color:var(--ink);background:#fff
-    }
-    form textarea{min-height:120px;resize:vertical}
-    form .row{display:grid;gap:12px}
-    @media(min-width:700px){form .row{grid-template-columns:1fr 1fr}}
-    /* Footer */
     footer{padding:24px;text-align:center;color:#64748b;border-top:1px solid var(--line)}
-    /* Mobile spacing tweaks */
-    @media(max-width:600px){
-      .nav-inner{padding:10px 12px}
-      section{padding:54px 0}
-    }
+    /* Mobile tweaks */
+    @media(max-width:600px){.nav-inner{padding:10px 12px} section{padding:48px 0}}
   </style>
 </head>
 <body>
 
-<header id="top">
+<header id="top" aria-label="Site header">
   <div class="container nav-inner">
     <div style="display:flex;align-items:center;gap:10px">
-      <img src="images/logo.png" alt="OrganicPlus" style="height:36px;width:auto" loading="eager" />
+      <img src="images/logo.png" alt="OrganicPlus logo" style="height:36px;width:auto" loading="eager" />
       <strong>OrganicPlus Fiji</strong>
     </div>
     <nav aria-label="Primary">
@@ -87,57 +72,71 @@
       <a href="#advantage">Why Us</a>
       <a href="#products">Products</a>
       <a href="#randd">R&amp;D</a>
-      <a href="#results">Results</a>
+      <a href="#proof">Proof</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn btn-primary" href="#contact" style="display:none">Partnership</a>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO (focused “above-the-fold” value prop + single primary action) -->
 <section class="hero" aria-label="Hero">
-  <img src="images/hero.jpg" alt="Fiji farm hero" />
+  <img src="images/hero.jpg" alt="Fiji farm landscape" />
   <div class="overlay"></div>
   <div class="copy container fade-in">
-    <img src="images/logo.png" alt="OrganicPlus" style="height:40px;margin-bottom:10px">
-    <h1>High-Performance Farming Innovations</h1>
-    <p>Engineered biologicals that help Fiji’s farmers achieve bigger harvests and higher profitability.</p>
+    <span class="eyebrow">High-Performance Farming</span>
+    <h1>Organic innovations for bigger, better harvests</h1>
+    <p>Engineered biologicals that improve soil health, strengthen plant resilience, and increase profitability across Fiji.</p>
     <div style="margin-top:14px">
-      <a class="btn btn-light" href="#products">View Products</a>
       <a class="btn btn-primary" href="#contact">Partner with Us</a>
+      <a class="btn btn-light" href="#products" style="margin-left:8px">View Products</a>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- CREDIBILITY BAR (logos/mentions; keep lightweight images or text badges) -->
+<section aria-label="Credibility">
+  <div class="container" style="display:grid;gap:12px;justify-items:center;text-align:center">
+    <div class="eyebrow">Trusted across Fiji</div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;color:#334155">
+      <div class="pill">Post Fiji retail network</div>
+      <div class="pill">Ministry of Agriculture collaborations</div>
+      <div class="pill">2,000+ farmers reached</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT (tight copy; scannable) -->
 <section id="about" aria-labelledby="about-title">
   <div class="container grid grid-2">
     <div>
-      <h2 id="about-title">About OrganicPlus Fiji</h2>
+      <span class="eyebrow">About</span>
+      <h2 id="about-title">OrganicPlus Fiji</h2>
       <p class="lead">
-        OrganicPlus Fiji is an agricultural biotechnology company based in Navua, Fiji. We convert national food-production waste into advanced bioactive inputs that improve soil health, strengthen plant resilience, and increase both the quality and quantity of harvests.
+        We are an agricultural biotechnology company based in Navua, Fiji. We convert food-production waste into advanced bioactive inputs that improve soil biology and crop performance—without compromising on safety or sustainability.
       </p>
-      <div class="grid" style="margin-top:18px">
-        <div class="pill"><strong>Vision:</strong> To be the market leader in high-performance farming innovations in the South Pacific.</div>
-        <div class="pill"><strong>Mission:</strong> Help farmers unlock higher crop production and profitability through high-performance organic solutions.</div>
+      <div class="grid" style="margin-top:16px">
+        <div class="pill"><strong>Vision:</strong> Lead high-performance farming innovations in the South Pacific.</div>
+        <div class="pill"><strong>Mission:</strong> Help farmers unlock higher production and profitability with organic solutions.</div>
         <div class="pill"><strong>Values:</strong> Sustainability • Quality • Innovation • Farmer Success</div>
       </div>
     </div>
     <div class="grid" style="grid-template-columns:1fr 1fr;gap:10px">
       <img class="round" src="images/eggplant.jpg" alt="Field application" loading="lazy">
       <img class="round" src="images/pumpkin.jpg" alt="Pumpkin result" loading="lazy">
-      <img class="round" src="images/chillies.jpg" alt="Chillies" style="grid-column:1/3" loading="lazy">
+      <img class="round" src="images/chillies.jpg" alt="Chillies harvest" style="grid-column:1/3" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- ADVANTAGE -->
+<!-- WHY US (visual hierarchy and simple choices) -->
 <section id="advantage" class="band" aria-labelledby="adv-title">
   <div class="container">
-    <h2 id="adv-title">Why Choose OrganicPlus Fiji</h2>
-    <p class="lead">We deliver a bio-performance farming system trusted across Fiji. Our proprietary microbial formulations rejuvenate soil, strengthen plant immunity, and increase harvest quality while remaining safe, sustainable, and easy to use.</p>
+    <span class="eyebrow">Why Choose Us</span>
+    <h2 id="adv-title">Bio-performance you can measure</h2>
+    <p class="lead">Our proprietary formulations rejuvenate soil, strengthen plant immunity, and improve harvest quality—while keeping costs predictable and usage simple.</p>
     <div class="grid grid-4" style="margin-top:16px">
-      <div class="card"><strong>Farmer-Proven</strong><br><span style="color:var(--muted)">Real results across Fiji.</span></div>
+      <div class="card"><strong>Farmer-Proven</strong><br><span style="color:var(--muted)">Field results across Fiji.</span></div>
       <div class="card"><strong>Scientifically Formulated</strong><br><span style="color:var(--muted)">Engineered biologicals, fast-acting.</span></div>
       <div class="card"><strong>Sustainable</strong><br><span style="color:var(--muted)">Turns waste into value.</span></div>
       <div class="card"><strong>High ROI</strong><br><span style="color:var(--muted)">Bigger, better harvests.</span></div>
@@ -145,39 +144,40 @@
   </div>
 </section>
 
-<!-- PRODUCTS -->
+<!-- PRODUCTS (focus on clarity; bullets; minimal friction) -->
 <section id="products" aria-labelledby="products-title">
   <div class="container">
-    <h2 id="products-title">Product Portfolio</h2>
+    <span class="eyebrow">Products</span>
+    <h2 id="products-title">Flagship portfolio</h2>
     <p class="lead">Focus products are below. Additional lines are in active R&amp;D.</p>
 
     <div class="grid grid-2" style="margin-top:18px">
       <div class="card">
         <div style="display:flex;gap:14px;align-items:center">
-          <img src="images/liquid_compost.jpg" alt="Liquid Compost" style="height:80px;width:80px;object-fit:cover;border-radius:12px" loading="lazy">
+          <img src="images/liquid_compost.jpg" alt="Liquid Compost bottle" style="height:80px;width:80px;object-fit:cover;border-radius:12px" loading="lazy">
           <div>
             <h3 style="margin:0">Liquid Compost — Harvest Booster</h3>
-            <p style="margin:6px 0;color:var(--muted)">Bio-active nutrient solution that improves soil fertility, boosts yield, and increases resilience to pests &amp; diseases.</p>
+            <p style="margin:6px 0;color:var(--muted)">Bio-active nutrient solution that improves soil fertility, boosts yield, and increases resilience to pests &amp; disease.</p>
           </div>
         </div>
         <ul style="margin:12px 0 0 18px;color:var(--muted)">
           <li>Boosts harvest size &amp; quality</li>
           <li>Improves soil health &amp; microbial activity</li>
           <li>Strengthens natural plant defenses</li>
-          <li>Enhances taste &amp; shelf-life of produce</li>
+          <li>Enhances taste &amp; shelf-life</li>
         </ul>
       </div>
 
       <div class="card">
         <div style="display:flex;gap:14px;align-items:center">
-          <img src="images/greenguard.jpg" alt="GreenGuard" style="height:80px;width:80px;object-fit:cover;border-radius:12px" loading="lazy">
+          <img src="images/greenguard.jpg" alt="GreenGuard bottle" style="height:80px;width:80px;object-fit:cover;border-radius:12px" loading="lazy">
           <div>
             <h3 style="margin:0">GreenGuard — Crop Protector</h3>
             <p style="margin:6px 0;color:var(--muted)">Natural insecticide &amp; fungicide from bamboo vinegar that controls pests &amp; disease without harming beneficial microbes.</p>
           </div>
         </div>
         <ul style="margin:12px 0 0 18px;color:var(--muted)">
-          <li>Reduces pest pressure &amp; disease outbreaks</li>
+          <li>Reduces pest pressure &amp; disease</li>
           <li>Improves plant vigor and crop health</li>
           <li>Safe, user-friendly, and eco-conscious</li>
           <li>Use in rotation with Liquid Compost</li>
@@ -198,40 +198,50 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="results" aria-labelledby="results-title" style="background:#f8fafc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<!-- SOCIAL PROOF (testimonials strengthen trust) -->
+<section id="proof" aria-labelledby="proof-title" style="background:#f8fafc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="container">
-    <h2 id="results-title">Farmer Results</h2>
-    <p class="lead">Real outcomes from Fiji farmers using OrganicPlus solutions.</p>
-
+    <span class="eyebrow">Results</span>
+    <h2 id="proof-title">What farmers are saying</h2>
     <div class="grid grid-3" style="margin-top:16px">
       <div class="card">
-        <p class="quote">“Liquid Compost has transformed our yield — our chillies are healthier and last longer.”</p>
-        <small>— Abdul Shahid, Naitasiri</small>
+        <p style="font-style:italic;color:#1f2937">“Liquid Compost has transformed our yield — our chillies are healthier and last longer.”</p>
+        <small style="color:#64748b">— Abdul Shahid, Naitasiri</small>
       </div>
       <div class="card">
-        <p class="quote">“GreenGuard helped reduce pest damage without harming the soil.”</p>
-        <small>— George Steele, Sigatoka</small>
+        <p style="font-style:italic;color:#1f2937">“GreenGuard reduced pest damage without harming the soil.”</p>
+        <small style="color:#64748b">— George Steele, Sigatoka</small>
       </div>
       <div class="card">
-        <p class="quote">“Easy to use, affordable, and truly effective.”</p>
-        <small>— Rapuama Corerega, Vanua Levu</small>
+        <p style="font-style:italic;color:#1f2937">“Easy to use, affordable, and truly effective.”</p>
+        <small style="color:#64748b">— Rapuama Corerega, Vanua Levu</small>
       </div>
     </div>
 
     <div class="grid grid-3" style="margin-top:16px">
-      <img class="round" src="images/colocasia_compare.jpg" alt="Before/After" loading="lazy">
-      <img class="round" src="images/farmer_colocasia.jpg" alt="Taro harvest" loading="lazy">
-      <img class="round" src="images/wizards_pumpkin.jpg" alt="Pumpkin result" loading="lazy">
+      <img class="round" src="images/colocasia_compare.jpg" alt="Before and after crop comparison" loading="lazy">
+      <img class="round" src="images/farmer_colocasia.jpg" alt="Farmers with taro harvest" loading="lazy">
+      <img class="round" src="images/wizards_pumpkin.jpg" alt="Large pumpkin result" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- DIRECTOR LETTER (short, executive) -->
+<section aria-label="Letter from the Director">
+  <div class="container card">
+    <span class="eyebrow">Leadership</span>
+    <h2 style="margin-top:2px">Letter from the Director</h2>
+    <p class="lead">We are committed to delivering measurable outcomes for farmers across Fiji through innovation, research, and strong partnerships. Our goal is simple: reliable, high-performance solutions that support sustainable growth and profitability.</p>
+    <p><strong>Rob Hay</strong><br><span style="color:#64748b">Director, Organic Plus (Fiji) Pte Ltd</span></p>
+  </div>
+</section>
+
+<!-- CONTACT (with Formspree) -->
 <section id="contact" aria-labelledby="contact-title" style="background:var(--brand);color:#fff">
   <div class="container" style="display:grid;gap:18px;grid-template-columns:1fr;max-width:1100px">
     <div>
-      <h2 id="contact-title" style="color:#fff">Corporate & Contact</h2>
+      <span class="eyebrow" style="color:#cfe7dc">Contact</span>
+      <h2 id="contact-title" style="color:#fff">Corporate & Partnership</h2>
       <p>Organic Plus (Fiji) Pte Ltd</p>
       <p>Navua, Fiji</p>
       <p>Email: <a href="mailto:admin@baywaterfiji.com" style="color:#fff;text-decoration:underline">admin@baywaterfiji.com</a></p>
@@ -243,30 +253,31 @@
       </div>
     </div>
 
-    <!-- Contact Form (Formspree) -->
+    <!-- Formspree form: replace action with your own form ID later if you want -->
     <div class="card" style="background:#ffffff;color:var(--ink);border-color:#d1e7db">
       <h3 style="margin-top:0;color:var(--brand)">Partnership Inquiry</h3>
       <form action="https://formspree.io/f/maypzbjo" method="POST">
-        <!-- NOTE: replace the endpoint above with your own Formspree form ID if you create one -->
         <input type="hidden" name="_subject" value="New partnership inquiry from organicplus-landing">
         <input type="hidden" name="_replyto" value="admin@baywaterfiji.com">
-        <div class="row">
-          <div>
-            <label for="name">Name</label><br>
-            <input id="name" name="name" type="text" placeholder="Your name" required>
+        <div style="display:grid;gap:12px;grid-template-columns:1fr">
+          <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+            <div>
+              <label for="name">Name</label><br>
+              <input id="name" name="name" type="text" placeholder="Your name" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:12px">
+            </div>
+            <div>
+              <label for="email">Email</label><br>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:12px">
+            </div>
           </div>
           <div>
-            <label for="email">Email</label><br>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" placeholder="Tell us about your store, distribution area, or request…" style="width:100%;min-height:120px;padding:12px;border:1px solid var(--line);border-radius:12px"></textarea>
           </div>
-        </div>
-        <div style="margin-top:12px">
-          <label for="message">Message</label><br>
-          <textarea id="message" name="message" placeholder="Tell us about your store, distribution area, or request…"></textarea>
-        </div>
-        <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
-          <button class="btn btn-primary" type="submit">Send Inquiry</button>
-          <span style="font-size:12px;color:#64748b">We’ll reply to <strong>admin@baywaterfiji.com</strong></span>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <span style="font-size:12px;color:#64748b">We’ll reply to <strong>admin@baywaterfiji.com</strong></span>
+          </div>
         </div>
       </form>
     </div>
@@ -276,12 +287,11 @@
 <footer>© <span id="yr"></span> OrganicPlus Fiji — High-Performance Farming Innovations</footer>
 
 <script>
-  // shrink header shadow on scroll
+  // subtle header shadow on scroll for feedback
   const header = document.querySelector('header');
   addEventListener('scroll', () => {
     header.style.boxShadow = (scrollY > 8) ? '0 6px 12px rgba(0,0,0,.06)' : 'none';
   });
-  // current year in footer
   document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
 </body>
